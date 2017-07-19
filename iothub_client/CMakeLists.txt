@@ -321,6 +321,7 @@ add_library(iothub_client_dll SHARED
     ./src/iothub_client.def
 )
 target_link_libraries(iothub_client_dll ${iothub_client_libs})
+set_target_properties(iothub_client_dll PROPERTIES OUTPUT_NAME "iothub_client")
 
 add_library(iothub_client
     ${iothub_client_c_files} 
